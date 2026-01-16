@@ -25,7 +25,7 @@ function loadQuestion(){
   const q = questions[current];
 
   document.getElementById("question").innerText =
-    `Qual a região associada a: ${q.nome}?`;
+    `${q.nome}`;
 
   document.getElementById("answer").innerText = q.regiao;
   document.getElementById("description").innerText = q.descricao;
