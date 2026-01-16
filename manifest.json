@@ -1,6 +1,6 @@
 {
   "name": "Quiz Flip PWA",
-  "short_name": "QuizFlip",
+  "short_name": "Trivia",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#020617",
