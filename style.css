@@ -1,0 +1,85 @@
+:root{
+  --glass-bg: rgba(255,255,255,0.18);
+  --border: rgba(255,255,255,0.32);
+  --text: #f5f5f5;
+}
+
+*{
+  box-sizing:border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body{
+  margin:0;
+  min-height:100svh;
+  background: linear-gradient(135deg,#1e293b,#020617);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:16px;
+  color:var(--text);
+}
+
+.quiz{
+  width:100%;
+  max-width:420px;
+  text-align:center;
+}
+
+.question{
+  margin-bottom:20px;
+  font-size:1.1rem;
+}
+
+/* CARD */
+.card-container{
+  perspective:1000px;
+}
+
+.card{
+  width:100%;
+  aspect-ratio:1 / 1;
+  position:relative;
+  transform-style:preserve-3d;
+  transition:transform .6s ease;
+  border-radius:8px;
+}
+
+.card.flip{
+  transform: rotateY(180deg);
+}
+
+.card-face{
+  position:absolute;
+  inset:0;
+  border-radius:8px;
+  background:var(--glass-bg);
+  backdrop-filter: blur(16px);
+  border:1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:16px;
+  backface-visibility:hidden;
+}
+
+.card-front{
+  font-size:1rem;
+}
+
+.card-back{
+  transform: rotateY(180deg);
+}
+
+.card-back h3{
+  margin:0 0 10px 0;
+  font-size:1.1rem;
+}
+
+.card-back p{
+  font-size:0.9rem;
+  line-height:1.4;
+  opacity:0.9;
+}
