@@ -1,10 +1,11 @@
 {
-  "name": "Quiz Geográfico",
-  "short_name": "Quiz",
+  "name": "Quiz Flip PWA",
+  "short_name": "QuizFlip",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#020617",
   "theme_color": "#020617",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icon-192.png",
